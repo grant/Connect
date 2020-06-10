@@ -1,0 +1,95 @@
+<%- include("partials/header") %>
+
+<div class="form">
+    <h1 class="formtitle">Just a form away from connecting!</h1>
+    <form action="/jobs" method="POST"  id="jobpost">
+        <h1 class="jobposttitle">Company Information</h1>
+        <hr>
+        <label>Company Name</label>
+        <input name="job[companyName]" type="text" form="jobpost">
+       
+        <h1 class="jobposttitle">Contact</h1>
+        <hr>
+        <div class="half">
+          <div class="halfform">
+            <label>First Name</label>
+            <input name="job[contactFName]" type="text" placeholder="John" form="jobpost" required>
+          </div>
+          <div class="halfform">
+            <label>Last Name</label>
+            <input name="job[contactLName]" type="text" placeholder="Doe" form="jobpost" required>
+          </div>
+        </div>
+        <div class="half">
+          <div class="halfform">
+            <label>Email</label>
+            <input name="job[contactEmail]" type="text" placeholder="hello@email.com" form="jobpost" required>
+          </div>
+          <div class="halfform">
+            <label>Phone</label>
+            <input name="job[contactPhone]" type="text" placeholder="123-444-1234" form="jobpost" required>
+          </div>
+        </div>
+        
+        <h1 class="jobposttitle">Position</h1>
+        <hr>
+        <label>Job Title</label>
+        <input name="job[positionTitle]" type="text" form="jobpost" required>
+        <label>Job Description</label>
+        <textarea name="job[positionDescription]" type="text" form="jobpost" required></textarea>
+        <label>Job Type</label>
+        <select name="job[jobType]" id="jobType" form="jobpost" required>
+          <option value="Full Time">Full Time</option>
+          <option value="Part Time">Part Time</option>
+          <option value="Temporary">Temporary</option>
+          <option value="Casual">Casual</option>
+          <option value="Internship">Internship</option>
+       </select>
+       <label>Preferred start date</label>
+       <input name="job[startDate]" type="text" form="jobpost" required>
+        <label>Select the appropriate industry</label>
+        <select name="job[positionIndustry]" id="industry" form="jobpost" required>
+            <option value="arts">Arts</option>
+            <option value="business">Business</option>
+            <option value="media">Media</option>
+            <option value="medical">Medical</option>
+            <option value="service">Service</option>
+            <option value="teaching">Teaching</option>
+            <option value="technology">Technology</option>
+         </select>
+        <label">Location of position</label>
+        <div class="location" required>
+          <div class="option">
+            <input id="remote" type="radio" name="job[positionLocation]" value="remote">
+            <label for="remote">Remote</label>
+          </div>
+          <div class="option">
+            <input id="address" type="radio" name="job[positionLocation]" value="address">
+            <label for="address">Address</label>
+          </div>
+        </div>
+
+        <h1 class="jobposttitle">Qualifications</h1>
+        <hr>
+        <label>Education</label>
+        <select name="job[education]" id="education" form="jobpost" required>
+          <option value="first">First year student and above</option>
+          <option value="second">Second year student and above</option>
+          <option value="third">Third year student and above</option>
+          <option value="fourth">Fourth year student and above</option>
+          <option value="grad">Recent graduate student</option>
+        </select>
+        <label">Preferred major/degree</label>
+        <input name="job[major]" id="major" type="text" form="jobpost" required>
+        <label>Other desired skills</label>
+        <h6><em>Please include as a list</em></h6>
+        <textarea name="job[otherSkills]" id="skils" type="text" form="jobpost" required></textarea>
+
+        <h1 class="jobposttitle">Application</h1>
+        <hr>
+        <input name="job[applyBy]" id="major" type="text" form="jobpost" placeholder="How would you like applicants to apply" required>
+        <input type="submit" required>
+    </form>
+</div>
+
+<%- include("partials/footer") %>

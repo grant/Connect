@@ -1,0 +1,154 @@
+body {
+    background-color: white;
+}
+ 
+form {
+    padding: 1% 5%;
+    height: 80%;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  
+label {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: grey;
+    display: block;
+  }
+
+hr {
+    border-color: grey;
+    display: inline-block;
+    height: 15px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    background-color: #f2f2f2;
+    border: 0px solid grey;
+    border-bottom: 2px solid white;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 8px 0px;
+    color: grey;
+  }
+
+label {
+    padding: 0;
+    margin: 0;
+    font-size: 19px;
+}
+
+element.style {
+    margin-bottom: 10px;
+}
+
+.formtitle {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    padding: 1% 5%;
+    font-size: 32.65px;
+    margin: 20px auto;
+}
+
+  
+.form {
+    background-color:white;
+    padding: 1% 4%;
+    margin: 5% auto 2% auto;
+    border-radius: 40px;
+    height: 80%;
+    width: 50%;
+    position: relative;
+    color: black;
+    box-shadow: 0px 0px 50px rgba(110, 114, 252, 0.5);
+}
+  
+.jobposttitle {
+color: black;
+font-family: "Raleway", sans-serif;
+font-weight: 400;
+padding-top: 0;
+margin: 0;
+font-size: 23px;
+text-align: left;
+}
+
+.jobposttitle:not(:first-child) {
+    margin-top: 30px;
+}
+
+.row {
+    display: block;
+}
+
+
+*::-webkit-scrollbar {
+width: 12px;
+}
+*::-webkit-scrollbar-track {
+background: #f2f2f2;
+border-radius: 2px;
+}
+*::-webkit-scrollbar-thumb {
+background-color: grey;
+border-radius: 20px;
+border: 3px solid #f2f2f2;
+}
+
+div .option {
+    display: block;
+}
+
+div label {
+    display: inline-block;
+}
+
+/* form content */
+input[type="text"], textarea, select {
+background-color: #F2F2F2;
+/* border: 0px solid grey;
+border-bottom: 2px solid white; */
+display: block;
+width: 100%;
+font-size: 18px;
+padding: 8px 0px;
+border-radius: 10px;
+border: none;
+padding: 5px 5px 5px 10px;
+margin: 0 0 10px 0;
+}
+
+input[type="text"]:focus, textarea:focus, select {
+background-color: #f2f2f2;
+border: none;
+outline: none;
+}
+
+textarea {
+resize: none;
+margin-bottom: 10px;
+height: 30%;
+}
+
+
+#contactfname, #contactlname, #contactemail, #contactphone {
+    width: 95%;
+    display: block;
+    margin:0;
+}
+
+.halfform {
+    width: 100%;
+    padding: 0;
+    margin:0;
+}
+.half {
+    display: inline-flex;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
