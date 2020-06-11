@@ -4,13 +4,13 @@ import bodyParser from 'body-parser';
 
 const app = express();
 
-//Connecting to MongoDB
+// Connecting to MongoDB
 mongoose.connect("mongodb://localhost:27017/connect", {useNewUrlParser:true, useUnifiedTopology: true});
 app.use('/public', express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
 
 // Setting up job schema
-var jobSchema = new mongoose.Schema({
+const jobSchema = new mongoose.Schema({
   companyName: String,
   positionTitle: String,
   positionDescription: String,
@@ -27,12 +27,12 @@ var jobSchema = new mongoose.Schema({
   otherSkills: String,
   applyBy: String,
   datePosted: {type: Date, default: Date.now},
-})
-var Job = mongoose.model("Job", jobSchema)
+});
+const Job = mongoose.model("Job", jobSchema);
 
 // New route
-app.get("/jobs/new", function(req, res){
-  res.render("new.html")
+app.get("/jobs/new", function(request, response){
+  response.render("new.html")
 });
 
 app.listen(3000, () =>
