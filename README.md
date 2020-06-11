@@ -1,8 +1,3 @@
-#Learning Git in VSCode
+# Connect
 
--second comment
-
--another line
-
--i really hope this works
-please
+This is a job's website for Canada.
